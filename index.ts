@@ -9,6 +9,6 @@ let zeroC = asNonWideningZero // 0型
 
 zeroA = 1
 
-// ↓は0型なのでコンパイルできない
-zeroB = 1
-zeroC = 1
+// ↓は0型に1を代入しているのでコンパイルエラーになる
+// zeroB = 1
+// zeroC = 1
