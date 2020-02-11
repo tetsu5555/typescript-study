@@ -8,11 +8,14 @@ app.get('/api/health', (req, res) => {
   res.send({ message: 'pong' })
 })
 
+// Routeに一致しないRequest
+// デフォルトではCannot Getのエラーページが返る
 app.use((req, res, next) => {
   res.sendStatus(404)
   next({ statusCode: 404 })
 })
 
+// Error Route
 app.use(
   (
     err: { statusCode: number },
