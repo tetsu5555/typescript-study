@@ -1,9 +1,11 @@
 import { axiosInstance } from './api'
+import { Health } from '../types/api'
 
 const elem = document.getElementById('ping')
 if (elem) {
   elem.addEventListener('click', () => {
-    axiosInstance.get('/api/health').then(({ data }) => {
+    // Genericeでレスポンス型を注入する
+    axiosInstance.get<Health>('/api/health').then(({ data }) => {
       console.log(data.message)
     })
   })
