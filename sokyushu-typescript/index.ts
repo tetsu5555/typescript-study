@@ -1,6 +1,6 @@
 function process(value: string | number) {
   // コンパイル通らない
-  return value.toUpperCase()
+  // return value.toUpperCase()
 }
 
 // 型ガードを追加
