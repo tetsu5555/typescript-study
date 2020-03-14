@@ -4,7 +4,7 @@ class Person  {
   sex: string;
 
   // コンストラクタ
-  constructor(name, sex) {
+  constructor(name: string, sex: string) {
     this.name = name;
     this.sex = sex;
   }
