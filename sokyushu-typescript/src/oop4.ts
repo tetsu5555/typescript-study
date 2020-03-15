@@ -1,4 +1,5 @@
 class Person4 {
+  // strictPropertyInitializationをfalseにしないとコンパイルエラーになった
   private _age: number;
 
   get age(): number {
